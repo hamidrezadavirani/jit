@@ -1,6 +1,10 @@
 [flake8]
 exclude =
-  migrations
+  migrations,
   __pycache__,
   manage.py,
   settings.py
+
+[tool:pytest]
+norecursedirs = migrations __pycache__ manage.py settings.py
+ 
